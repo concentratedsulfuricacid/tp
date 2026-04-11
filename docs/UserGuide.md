@@ -300,6 +300,7 @@ Format: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [r/REMARK] [t/TAG]�
 * When editing tags, all existing tags are replaced — editing tags is not cumulative.
 * To remove all tags, type `t/` with nothing after it.
 * To clear remark, type `r/` with nothing after it.
+* Remarks must be at most 40 characters and contain only alphanumeric characters and spaces.
 * To update just the remark, you can also use the dedicated [`remark`](#updating-a-subscribers-remark-remark) command.
 * See also: [`editbox`](#editing-a-box-editbox) to change box names or expiry dates.
 
@@ -321,6 +322,7 @@ Format: `remark INDEX r/REMARK`
 
 * The `INDEX` refers to the number shown next to the subscriber in the current list. It **must be a positive integer** (1, 2, 3, …).
 * Only one `r/` prefix is allowed — providing multiple `r/` prefixes in the same command is an error.
+* Remarks must be at most 40 characters and contain only alphanumeric characters and spaces.
 * You can also update remarks via [`edit`](#editing-a-subscriber-edit) using the `r/` prefix.
 
 > **Tip:** Use remarks for delivery-specific notes like "ring doorbell", "leave at guardhouse", or "call before arriving".
